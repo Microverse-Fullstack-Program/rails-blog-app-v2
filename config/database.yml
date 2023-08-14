@@ -23,16 +23,16 @@ default: &default
 
 development:
   <<: *default
-  database: rails_blog_app_v2_development
+  database: blogapp_v2_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: rails_blog_app_v2
+  username: postgres
 
   # The password associated with the postgres role (username).
-  #password:
+  password: postgres#13579
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: rails_blog_app_v2_test
+  database: blogapp_v2_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: rails_blog_app_v2_production
-  username: rails_blog_app_v2
+  database: blogapp_v2_production
+  username: blogapp_v2
   password: <%= ENV["RAILS_BLOG_APP_V2_DATABASE_PASSWORD"] %>
