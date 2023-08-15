@@ -1,4 +1,4 @@
-#spec/model/post_spec.rb
+# spec/model/post_spec.rb
 require 'rails_helper'
 
 RSpec.describe Post, type: :model do
@@ -37,7 +37,7 @@ RSpec.describe Post, type: :model do
     expect(post).to be_valid
   end
 
-    it 'is not valid with a negative comments_counter' do
+  it 'is not valid with a negative comments_counter' do
     post.comments_counter = -1
     expect(post).to_not be_valid
   end
