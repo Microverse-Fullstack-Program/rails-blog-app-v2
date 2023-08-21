@@ -77,4 +77,4 @@ gem 'rspec', '~> 3.12'
 
 gem 'rspec-rails', '~> 6.0'
 
-gem "rails-controller-testing", "~> 1.0"
+gem 'rails-controller-testing', '~> 1.0'

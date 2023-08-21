@@ -27,7 +27,6 @@ RSpec.describe 'Users', type: :request do
     end
   end
 
-  
   describe 'response body' do
     it 'contains correct /Users#index/ palceholder text' do
       get users_path
