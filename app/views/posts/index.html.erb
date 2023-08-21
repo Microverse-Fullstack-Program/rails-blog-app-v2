@@ -1,25 +1,10 @@
 
 <section class="container">
-    <div class="user">
-         <div class="user-photo">
-            <img src="<%= @user.photo %>" alt="User Photo">
-        </div>
 
-        <div class="user-info">
-            <%= link_to user_url(@user), class: 'name' do %>
-                <h2><%= @user.name %></h2>
-            <% end %>
+    <%= render "/users/user_partial", user: @user %>
 
-            <div class="user-posts">
-                <p>Number of Posts:
-                    <% if @user.posts_counter %>
-                        <%= @user.posts_counter %>
-                    <% else %>
-                        0
-                    <% end %>
-                </p>
-            </div>
-        </div>
+    <div class="user-bio">
+        <p><%= @user.bio %></p>
     </div>
 
     <% @posts.each do |post| %>
