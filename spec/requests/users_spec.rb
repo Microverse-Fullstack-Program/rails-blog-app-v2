@@ -14,4 +14,16 @@ RSpec.describe 'Users', type: :request do
       expect(response).to have_http_status(:success)
     end
   end
+
+  describe 'Template rendering' do
+    it 'renders the index template' do
+      get '/users/index'
+      expect(response).to render_template('index')
+    end
+
+    it 'renders the show template' do
+      get '/users/show'
+      expect(response).to render_template('show')
+    end
+  end
 end
