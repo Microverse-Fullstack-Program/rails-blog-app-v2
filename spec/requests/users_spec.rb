@@ -26,4 +26,16 @@ RSpec.describe 'Users', type: :request do
       expect(response).to render_template('show')
     end
   end
+
+  describe 'response body' do
+    it 'contains correct /Users#index/ palceholder text' do
+      get '/users/index'
+      expect(response.body).to match(/Users#index/)
+    end
+
+    it 'contains correct /Users#show/ palceholder text' do
+      get '/users/show'
+      expect(response.body).to match(/Users#show/)
+    end
+  end
 end

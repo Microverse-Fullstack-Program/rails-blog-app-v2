@@ -26,4 +26,16 @@ RSpec.describe 'Posts', type: :request do
       expect(response).to render_template('show')
     end
   end
+
+  describe 'response body' do
+    it 'contains correct /Posts#index/ palceholder text' do
+      get '/posts/index'
+      expect(response.body).to match(/Posts#index/)
+    end
+
+    it 'contains correct /Posts#show/ palceholder text' do
+      get '/posts/show'
+      expect(response.body).to match(/Posts#show/)
+    end
+  end
 end
