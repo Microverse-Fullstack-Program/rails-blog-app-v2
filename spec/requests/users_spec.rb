@@ -16,26 +16,27 @@ RSpec.describe 'Users', type: :request do
   end
 
   describe 'Template rendering' do
-    it 'renders the index template' do
-      get '/users/index'
+    it 'renders the /Users#index template' do
+      get users_path
       expect(response).to render_template('index')
     end
 
-    it 'renders the show template' do
-      get '/users/show'
+    it 'renders the /Users#show template' do
+      get user_path(1)
       expect(response).to render_template('show')
     end
   end
 
+  
   describe 'response body' do
     it 'contains correct /Users#index/ palceholder text' do
-      get '/users/index'
-      expect(response.body).to match(/Users#index/)
+      get users_path
+      expect(response.body).to include('Here is a list of all users')
     end
 
     it 'contains correct /Users#show/ palceholder text' do
-      get '/users/show'
-      expect(response.body).to match(/Users#show/)
+      get user_path(1)
+      expect(response.body).to include('Here is a list of posts for a given user')
     end
   end
 end
