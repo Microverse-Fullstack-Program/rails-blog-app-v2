@@ -44,7 +44,14 @@
         </div>
     <% end %>
 
-    <div class="btn-link">
-        <button>Pagination</button>
+    <div class="grp-buttons">
+        <div class="btn-link">
+            <button>
+                <%= link_to ' Add Post ', new_user_post_path(@user) %>
+            </button>
+        </div>
+        <div class="btn-link">
+            <button>Pagination</button>
+        </div>
     </div>
 </section>
