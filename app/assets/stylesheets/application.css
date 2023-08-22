@@ -83,12 +83,20 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
   padding: 0.5rem 1rem;
-  font-size: small;
+  font-size: medium;
+  gap: 1rem;
 }
 
 .count span {
   padding: 0 0.25rem;
+}
+
+.count button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .post-comments {
@@ -111,4 +119,21 @@ a {
   border-bottom: 5px solid black;
   border-right: 3px solid black;
   border-radius: 5px;
+}
+
+.grp-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.thumb {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: x-large;
+  border: none;
 }
