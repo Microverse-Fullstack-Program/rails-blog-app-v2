@@ -19,6 +19,11 @@
                 0
                 <% end %>
             </span>
+            <%= form_with(model: @like, url: user_post_likes_path(@post.author, @post)) do |form| %>
+                <%= form.button type: :submit do %>
+                    <span class="thumb"> &#128077; </span>
+                <% end %>
+            <% end %>
         </div>
         <p><%= @post.text %></p>
     </div>
@@ -29,6 +34,12 @@
                 <span class="comment-author"><%= comment.author.name %>:</span>
                 <span><%= comment.text %></span>
             </div>
+        <% end %>
+    </div>
+
+    <div class ="like-comment">
+        <%= link_to new_user_post_comment_url(@user, @post), class: 'btn-link' do %>
+        <button>Add comment</button>
         <% end %>
     </div>
 </section>
