@@ -1,0 +1,13 @@
+<div class="post-comments">
+  <% if post.comments.any? %>
+    <hr />
+    <h4>Comments</h4>
+  <% end %>
+
+  <% post.comments.each do |comment| %>
+      <div class="comment">
+          <span class="comment-author"><%= comment.author.name %>:</span>
+          <span><%= comment.text %></span>
+      </div>
+  <% end %>
+</div>

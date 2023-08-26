@@ -1,57 +1,11 @@
-
 <section class="container">
 
-    <%= render "/users/user_partial", user: @user %>
+    <%= render partial: "partials/user", locals: { user: @user}%>
 
     <div class="user-bio">
+        <h3 class="bio">Biography</h3> 
         <p><%= @user.bio %></p>
     </div>
 
-    <% @posts.each do |post| %>
-        <div class = "post">
-           <%= link_to user_post_url(user_id: @user.id, id: post.id), class: 'post-link' do %>
-             <h3>Post #<%= @user.posts.index(post) + 1 %></h3>
-           <% end %>
-           <p><%= post.text %></p>
-            <div class="count">
-               <span>Comments:
-                <% if post.comments_counter %>
-                    <%= post.comments_counter %>
-                    <% else %>
-                    0
-                    <% end %>
-                </span>
-               <span>Likes:
-                <% if post.likes_counter %>
-                <%= post.likes_counter %>
-                    <% else %>
-                    0
-                    <% end %>
-                </span>
-            </div>
-        </div>
-
-        <div class="post-comments">
-            <% post.recent_comments.each do |comment| %>
-                <div class="comment">
-                    <span class="comment-author">
-                      <%= comment.author.name %>:
-                    </span>
-                    <span><%= comment.text %></span>
-                </div>
-            <% end %>
-            </div>
-        </div>
-    <% end %>
-
-    <div class="grp-buttons">
-        <div class="btn-link">
-            <button>
-                <%= link_to ' Add Post ', new_user_post_path(@user) %>
-            </button>
-        </div>
-        <div class="btn-link">
-            <button>Pagination</button>
-        </div>
-    </div>
+    <%= render partial: "partials/all_posts" %>
 </section>

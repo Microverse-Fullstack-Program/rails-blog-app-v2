@@ -1,0 +1,23 @@
+<div class="count">
+  <span>Comments:
+      <% if post.comments_counter %>
+      <%= post.comments_counter %>
+      <% else %>
+      0
+      <% end %>
+  </span>
+
+  <span>Likes:
+      <% if post.likes_counter %>
+      <%= post.likes_counter %>
+      <% else %>
+      0
+      <% end %>
+  </span>
+  
+  <%= form_with(model: @like, url: user_post_likes_path(post.author, post)) do |form| %>
+      <%= form.button type: :submit do %>
+          <span class="thumb"> &#128077; </span>
+      <% end %>
+  <% end %>
+</div>
