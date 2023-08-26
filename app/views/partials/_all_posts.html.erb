@@ -1,0 +1,14 @@
+<div class = "post">
+  <%= render partial: "partials/post", locals: { posts: @posts, recent: false } %>
+</div>
+
+<div class="grp-buttons">
+  <div class="btn-link">
+    <button>
+      <%= link_to ' Add Post ', new_user_post_path(@user) %>
+    </button>
+  </div>
+  <div class="btn-link">
+    <button>Pagination</button>
+  </div>
+</div>

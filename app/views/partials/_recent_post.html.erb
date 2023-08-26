@@ -1,0 +1,21 @@
+<div class = "post">
+  <%= render partial: "partials/post", locals: { posts: @user.recent_posts, recent: true } %>
+</div>
+
+<div class="grp-buttons">
+  <%= link_to user_posts_url(@user.id), class: 'btn-link' do %>
+    <button>
+      <% if @user.posts_counter > @user.recent_posts.length %>
+        See All Posts
+      <% else %>
+        Posts Detail
+      <% end %>
+    </button>
+  <% end %>
+
+  <div class="btn-link">
+    <button>
+      <%= link_to ' Add Post ', new_user_post_path(@user) %>
+    </button>
+  </div>
+</div>
