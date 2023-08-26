@@ -1,53 +1,11 @@
 <section class="container">
 
-    <%= render "user_partial", user: @user %>
+    <%= render partial: "partials/user", locals: { user: @user}%>
         
     <div class="user-bio">
+        <h3 class="bio">Biography</h3> 
         <p><%= @user.bio %></p>
     </div>
 
-    <div class = "post">
-        <% @user.recent_posts.each do |post| %>
-           <%= link_to user_post_url(user_id: @user.id, id: post.id), class: 'post-link' do %>
-             <h3>Post #<%= @user.posts.index(post) + 1 %></h3>
-           <% end %>
-           <p><%= post.text %></p>
-            <div class="count">
-               <span>Comments:
-               <% if post.comments_counter %>
-                <%= post.comments_counter %>,
-                <% else %>
-                0,
-                <% end %>
-                </span>
-               <span>Likes:
-               <% if post.likes_counter %>
-               <%= post.likes_counter %>
-                <% else %>
-                0
-                <% end %>
-                </span>
-            </div>
-            <% if post !=  @user.recent_posts.last %>
-                <hr />
-            <% end %>
-        <% end %>
-    </div>
-
-    <div class="grp-buttons">
-        <%= link_to user_posts_url(@user.id), class: 'btn-link' do %>
-            <button>
-                <% if @user.posts_counter > @user.recent_posts.length %>
-                    See All Posts
-                <% else %>
-                    Posts Detail
-                <% end %>
-            </button>
-        <% end %>
-        <div class="btn-link">
-            <button>
-                <%= link_to ' Add Post ', new_user_post_path(@user) %>
-            </button>
-        </div>
-    </div>
+    <%= render partial: "partials/recent_post" %>
 </section>
