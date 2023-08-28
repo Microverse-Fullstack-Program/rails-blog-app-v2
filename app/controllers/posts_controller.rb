@@ -29,7 +29,7 @@ class PostsController < ApplicationController
     @post.author_id = current_user.id
 
     if @post.save
-      redirect_to user_posts_path, notice: 'Post was successfully created.'
+      redirect_to user_path(current_user.id), notice: 'Post was successfully created.'
     else
       render :new
     end
