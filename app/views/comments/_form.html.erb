@@ -1,0 +1,26 @@
+<%= form_with(model:  @comment, url: user_post_comments_url(@post.author, @post), local: true) do |form| %>
+    <% if @comment.errors.any? %>
+        <div style="color: red">
+            <h3><%= pluralize(@comment.errors.count, "error") %> prohibited this post from being saved:</h3>
+      
+            <ul>
+              <% @comment.errors.each do |error| %>
+                <li><%= error.full_message %></li>
+              <% end %>
+            </ul>
+        </div>
+    <% end %>
+      
+    <div class="form-elements">
+        <%= form.text_area :text, class: 'comment-textarea' %>
+    </div>
+      
+    <div class="grp-buttons">
+        <div class="btn-link">
+            <%= form.submit 'Create' %>
+        </div>
+        <div class="btn-link">
+            <%= link_to "Cancel", user_post_url(user_id: @user.id, id: @post.id) %>
+        </div>
+    </div>
+<% end %>
