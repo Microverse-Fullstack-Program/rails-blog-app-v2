@@ -3,12 +3,14 @@
     <h3>Post #<%= @user.posts.index(post) + 1 %></h3>
   <% end %>
 
+  <h3><%= post.title %></h3> 
+
   <p><%= post.text %></p>
 
   <%= render partial: "partials/counter", locals: { post: post } %>
   
   <% unless recent %>
-    <%= render partial: "partials/comments", locals: { post: post } %>
+    <%= render partial: "partials/comments", locals: { comments: post.comments } %>
   <% end %>
 
   <% if post !=  posts.last %>

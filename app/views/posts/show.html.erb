@@ -1,20 +1,22 @@
 <section class="container">
     <div class = "post">
-        <h3>Post #<%= @user.posts.index(@post) + 1 %>
+        <h3>Post #<%= @post.id %>
             by
             <%= @user.name %>
         </h3>
         
         <%= render partial: "partials/counter", locals: { post: @post } %>
+
+        <h3><%= @post.title %></h3> 
         
         <p><%= @post.text %></p>
         
-        <%= render partial: "partials/comments", locals: { post: @post } %>
+        <%= render partial: "partials/comments", locals: { comments: @post.comments  } %>
     </div>
 
     <div class ="like-comment">
         <%= link_to new_user_post_comment_url(@user, @post), class: 'btn-link' do %>
-        <button>Add comment</button>
+        <button>Add Comment</button>
         <% end %>
     </div>
 </section>
