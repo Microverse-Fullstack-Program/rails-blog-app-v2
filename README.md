@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h1><b> Items Catalog </b></h1>
+  <h1><b> Blog APP </b></h1>
 </div>
 
 
@@ -16,7 +16,6 @@
     - [Setup ](#setup-)
     - [Usage ](#usage-)
   - [✍️ Authors ](#️-authors-)
-    - [👤 **Chere Lemma**](#-chere-lemma)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [💖 Show your support ](#-show-your-support-)
@@ -87,23 +86,25 @@ To run the project, execute the following command:
 
 ## ✍️ Authors <a name="authors"></a>
 
-### 👤 **Chere Lemma**
+### 👤 **Chere Lemma Urgaya**
 
 - GitHub: [@cherelemma](https://github.com/cherelemma)
 - LinkedIn: [@chere-lemma27211613](https://www.linkedin.com/in/chere-lemma27211613)
 - Twitter: [@twitterhandle](https://twitter.com/Chere21271613)
 
+### 👤 **Wilhelm Naayole Kamulunga**
+
+- GitHub: [@githubhandle](https://github.com/WilhelmK109)
+- Twitter: [@twitterhandle](https://twitter.com/ActiveK7)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/wilhelm-kamulunga-613675114/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [] Processing data in models.
-- [] Views.
-- [] Forms
-- [] Validations, Model specs, and n+1 problems.
 - [] Add Devise.
 - [] Add authorization rules.
-- [] Integration specs for Views.
+- [] Dislike post
 - [] Add API endpoints.
 - [] API documentation.
   
