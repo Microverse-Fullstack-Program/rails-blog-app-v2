@@ -32,9 +32,12 @@ RSpec.describe 'Post #new page test', type: :feature do
     page.has_content?('Create')
   end
 
-  it 'When the button to create a new post is clicked, it should redirect to the new post page.' do
+  it 'It should save new post' do
+    fill_in 'Title', with: 'test post'
+    fill_in 'Text', with: 'This is my first post'
     click_on 'Create'
-    expect(current_path).to eq(user_posts_path)
+    expect(current_path).to eq(user_path(@user))
+    expect(page).to have_content('Post was successfully created.')
   end
 
   it 'It should display the button to cancel the creation of a new post' do
@@ -43,13 +46,6 @@ RSpec.describe 'Post #new page test', type: :feature do
 
   it 'When the button to cancel the creation of a new post is clicked, it should redirect to the user posts page.' do
     click_on 'Cancel'
-    expect(current_path).to eq(user_posts_path(@user))
-  end
-
-  it 'It should save new post' do
-    fill_in 'Title', with: 'test post'
-    fill_in 'Text', with: 'This is my first post'
-    click_on 'Create'
-    expect(page).to have_content('Post was successfully created.')
+    expect(current_path).to eq(user_path(@user))
   end
 end

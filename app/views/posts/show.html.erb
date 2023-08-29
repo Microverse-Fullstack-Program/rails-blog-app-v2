@@ -1,4 +1,8 @@
 <section class="container">
+    <% if notice %>
+        <p class="notice"><%= notice %></p>
+    <% end %>
+
     <div class = "post">
         <h3>Post #<%= @post.id %>
             by
