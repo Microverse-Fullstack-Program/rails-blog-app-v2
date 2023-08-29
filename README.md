@@ -7,7 +7,7 @@
 
 ## 📗 Table of Contents
 
-- [Catalog Ruby ](#catalog-ruby-)
+- [Blog APP with RoR ](#blog-app-with-ror-)
   - [🛠 Built With ](#-built-with-)
     - [- Tech Stack ](#--tech-stack-)
     - [Key Features ](#key-features-)
@@ -25,7 +25,7 @@
   - [📝  License ](#--license-)
 
 
-# Catalog Ruby <a name="about-project"></a>
+# Blog APP with RoR <a name="about-project"></a>
 
 This project is all about a simple blog application where a user can post anything and other users can comment and like the post
 
