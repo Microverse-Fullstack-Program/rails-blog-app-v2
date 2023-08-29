@@ -4,9 +4,6 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find_by(id: params['id'])
-
-    redirect_to users_path if @user.nil?
-    @posts = @user.posts
+    @user = User.includes(:posts).find_by(id: params[:id])
   end
 end

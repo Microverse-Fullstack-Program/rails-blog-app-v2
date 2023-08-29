@@ -1,20 +1,12 @@
 class PostsController < ApplicationController
   def index
-    @current_user = current_user
     @user = User.find(params[:user_id])
-
-    redirect_to root_path if @user.nil?
-    @posts = @user.posts
+    @posts = Post.includes(:comments).where(author_id: @user.id)
   end
 
   def show
     @user = User.find(params[:user_id])
-
-    redirect_to root_path if @user.nil?
-    @post = @user.posts.find(params[:id])
-
-    redirect_to user_posts_path(@user) if @post.nil?
-    @comments = @post.comments
+    @post = Post.includes(:comments).find_by(id: params[:id])
   end
 
   def new

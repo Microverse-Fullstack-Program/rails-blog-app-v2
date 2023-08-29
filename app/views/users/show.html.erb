@@ -1,5 +1,8 @@
 <section class="container">
-
+    <% if notice %>
+        <p class="notice"><%= notice %></p>
+    <% end %>
+    
     <%= render partial: "partials/user", locals: { user: @user}%>
         
     <div class="user-bio">

@@ -7,7 +7,7 @@
 
 ## 📗 Table of Contents
 
-- [Catalog Ruby ](#catalog-ruby-)
+- [Blog APP with RoR ](#blog-app-with-ror-)
   - [🛠 Built With ](#-built-with-)
     - [- Tech Stack ](#--tech-stack-)
     - [Key Features ](#key-features-)
@@ -16,6 +16,8 @@
     - [Setup ](#setup-)
     - [Usage ](#usage-)
   - [✍️ Authors ](#️-authors-)
+    - [👤 **Chere Lemma Urgaya**](#-chere-lemma-urgaya)
+    - [👤 **Wilhelm Naayole Kamulunga**](#-wilhelm-naayole-kamulunga)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [💖 Show your support ](#-show-your-support-)
@@ -23,7 +25,7 @@
   - [📝  License ](#--license-)
 
 
-# Catalog Ruby <a name="about-project"></a>
+# Blog APP with RoR <a name="about-project"></a>
 
 This project is all about a simple blog application where a user can post anything and other users can comment and like the post
 
@@ -89,7 +91,7 @@ To run the project, execute the following command:
 ### 👤 **Chere Lemma Urgaya**
 
 - GitHub: [@cherelemma](https://github.com/cherelemma)
-- LinkedIn: [@chere-lemma27211613](https://www.linkedin.com/in/chere-lemma27211613)
+- LinkedIn: [@chere-lemma27211613](https://www.linkedin.com/in/chere-lemma-urgaya)
 - Twitter: [@twitterhandle](https://twitter.com/Chere21271613)
 
 ### 👤 **Wilhelm Naayole Kamulunga**

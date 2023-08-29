@@ -4,13 +4,11 @@
 
 <div class="grp-buttons">
   <%= link_to user_posts_url(@user.id), class: 'btn-link' do %>
-    <button>
-      <% if @user.posts_counter > @user.recent_posts.length %>
-        See All Posts
-      <% else %>
-        Posts Detail
-      <% end %>
-    </button>
+    <% if @user.posts_counter > @user.recent_posts.length %>
+      <button> See All Posts </button>
+    <% else %>
+      <button> Posts Detail </button>
+    <% end %>
   <% end %>
 
   <div class="btn-link">
