@@ -97,7 +97,7 @@ To run the project, execute the following command:
 - GitHub: [@githubhandle](https://github.com/WilhelmK109)
 - Twitter: [@twitterhandle](https://twitter.com/ActiveK7)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/wilhelm-kamulunga-613675114/)
-- 
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
