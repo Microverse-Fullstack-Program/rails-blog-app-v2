@@ -2,7 +2,7 @@ require 'rails_helper'
 RSpec.describe 'User #show page content', type: :feature do
   before(:each) do
     @user = User.create(name: 'Chere L', photo: 'https://image.jpg',
-                         bio: 'Micraunote', posts_counter: 5)
+                        bio: 'Micraunote', posts_counter: 5)
     @post1 = Post.create(title: 'test post-1', text: 'test text-1', comments_counter: 1,
                          likes_counter: 3, author_id: @user.id)
     @post2 = Post.create(title: 'test post-2', text: 'test text-2', comments_counter: 2,
@@ -23,7 +23,7 @@ RSpec.describe 'User #show page content', type: :feature do
   it 'It should display the bio of the user' do
     page.has_content?(@user.bio)
   end
-  it 'It should display the user three recent/last posts'  do
+  it 'It should display the user three recent/last posts' do
     recent = @user.recent_posts
     recent.each do |post|
       page.has_content?(post.text)

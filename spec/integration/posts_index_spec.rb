@@ -54,7 +54,7 @@ RSpec.describe 'Post #index page test', type: :feature do
   it 'It should display the button to create a new post' do
     page.has_content?('New Post')
   end
-  
+
   it 'When the button to create a new post is clicked, it should redirect to the new post page.' do
     page.first(:link, 'New Post').click
     expect(current_path).to eq(new_user_post_path(@user))
