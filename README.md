@@ -16,7 +16,6 @@
     - [Setup ](#setup-)
     - [Usage ](#usage-)
   - [✍️ Authors ](#️-authors-)
-    - [👤 **Chere Lemma**](#-chere-lemma)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [💖 Show your support ](#-show-your-support-)
@@ -94,6 +93,7 @@ To run the project, execute the following command:
 - Twitter: [@twitterhandle](https://twitter.com/Chere21271613)
 
 ### 👤 **Wilhelm Naayole Kamulunga**
+
 - GitHub: [@githubhandle](https://github.com/WilhelmK109)
 - Twitter: [@twitterhandle](https://twitter.com/ActiveK7)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/wilhelm-kamulunga-613675114/)
