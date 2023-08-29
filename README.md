@@ -16,6 +16,8 @@
     - [Setup ](#setup-)
     - [Usage ](#usage-)
   - [✍️ Authors ](#️-authors-)
+    - [👤 **Chere Lemma Urgaya**](#-chere-lemma-urgaya)
+    - [👤 **Wilhelm Naayole Kamulunga**](#-wilhelm-naayole-kamulunga)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [💖 Show your support ](#-show-your-support-)
@@ -89,7 +91,7 @@ To run the project, execute the following command:
 ### 👤 **Chere Lemma Urgaya**
 
 - GitHub: [@cherelemma](https://github.com/cherelemma)
-- LinkedIn: [@chere-lemma27211613](https://www.linkedin.com/in/chere-lemma27211613)
+- LinkedIn: [@chere-lemma27211613](https://www.linkedin.com/in/chere-lemma-urgaya)
 - Twitter: [@twitterhandle](https://twitter.com/Chere21271613)
 
 ### 👤 **Wilhelm Naayole Kamulunga**
