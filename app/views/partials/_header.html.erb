@@ -7,9 +7,15 @@
 
       <h1> Blog App </h1>
 
-      <%= link_to :back do %>
-        <%= image_tag "back_icon.png", :alt => "Back" %>
-      <% end %>
+      <div>
+        <%= link_to :back do %>
+          <%= image_tag "back_icon.png", :alt => "Back" %>
+        <% end %>
+        <%= link_to destroy_user_session_path, data: { "turbo-method": :delete } do %> 
+          <%= image_tag "logout_icon.png", :alt => "Logout" %>
+        <% end %>
+      </div
+
     </div>
   </header>
 <% end %>
