@@ -23,7 +23,7 @@
 
     <% if can? :destroy, post %>
         <div class="btn-delete">
-            <%= link_to user_post_url(post.author_id, post), method: :delete, class: 'btn-link' do %>
+            <%= link_to user_post_url(post.author_id, post), data: { "turbo-method": :delete }, class: 'btn-link' do %>
                 <button>Delete Post</button>
             <% end %>
         </div>
