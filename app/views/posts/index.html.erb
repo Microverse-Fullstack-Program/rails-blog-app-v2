@@ -2,10 +2,12 @@
 
     <%= render partial: "partials/user", locals: { user: @user}%>
 
-    <div class="user-bio">
-        <h3 class="bio">Biography</h3> 
-        <p><%= @user.bio %></p>
-    </div>
+    <% unless @user.bio.nil? %>
+        <div class="user-bio">
+            <h3 class="bio">Biography</h3> 
+            <p><%= @user.bio %></p>
+        </div>
+    <% end %>
 
     <%= render partial: "partials/all_posts" %>
 </section>

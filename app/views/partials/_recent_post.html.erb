@@ -1,6 +1,8 @@
-<div class = "post">
-  <%= render partial: "partials/post", locals: { posts: @user.recent_posts, recent: true } %>
-</div>
+<% unless @user.recent_posts.empty? %>
+  <div class = "post">
+    <%= render partial: "partials/post", locals: { posts: @user.recent_posts, recent: true } %>
+  </div>
+<% end %>
 
 <div class="grp-buttons">
   <%= link_to user_posts_url(@user.id), class: 'btn-link' do %>

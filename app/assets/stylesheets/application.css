@@ -12,6 +12,7 @@ body {
   margin: auto;
 }
 
+.wrapper,
 .container {
   width: 100%;
   display: flex;
@@ -25,6 +26,35 @@ body {
   border-radius: 10px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 30vw;
+}
+
+form input,
+form textarea {
+  width: 25vw;
+  padding: 0.5rem;
+  border: 1px solid black;
+}
+
+form textarea {
+  height: 10vh;
+}
+
+.form-elements {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+/* style user profile info */
 .user {
   width: 100%;
   display: flex;
@@ -82,6 +112,7 @@ a {
   text-decoration: underline;
 }
 
+/* style the user's posts, comments and likes */
 .post {
   width: 100%;
   display: flex;
@@ -97,14 +128,6 @@ a {
 
 .post p {
   padding: 0.5rem 1rem;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-  width: 30vw;
 }
 
 .count {
@@ -177,54 +200,167 @@ form {
   border: none;
 }
 
-.header {
-  width: 91%;
-  height: 75px;
-  background-color: #62b3e9;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 3px 2px 3px 5px #62b3e9;
+.btn-delete button {
+  border: none;
+  box-shadow: 1px 2px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.short-button {
+  width: 5vw;
+  align-items: flex-end;
+  margin-left: 2rem;
+  padding: 0.15rem 0.25rem;
+  box-shadow: 1px 2px 1px 3px rgba(58, 2, 2, 0.2);
+  border: #10055e 1px solid;
   border-radius: 10px;
 }
 
-.header a {
-  text-decoration: none;
-  color: #3704ef;
-  font-size: large;
+/* style the authentification pages */
+.auth_pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: black;
+  font-size: medium;
+  width: 40vw;
+  margin: 50px auto;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border: 1px solid #a7a3a3;
+  box-shadow: 2px 3px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.shared {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0;
+  width: 30vw;
+  padding-bottom: 0.5rem;
+}
+
+.shared a {
+  color: black !important;
+}
+
+.actions {
+  border: 1px solid #1e1d1d;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px #1e1d1d;
+}
+
+.actions input {
+  cursor: pointer;
+  font-size: 16.5px;
+}
+
+.remember_me {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+
+.remember_me input {
+  width: 1rem;
+  height: 1rem;
+}
+
+.auth_links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  width: 30vw;
+  margin: auto auto;
+}
+
+.sign_in_up {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.auth_links #confirmation {
+  color: #a10505;
+  padding: 0.5rem;
+  box-shadow: #890505 1px 1px 1px 1px;
+}
+
+.cancel_back {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50vw;
+}
+
+.cancel_account {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cancel_back a {
+  color: rgb(104, 4, 235);
   font-weight: bold;
 }
 
-.header img {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  border: 2px solid black;
+.cancel_account .button_to {
+  width: 20vw;
+}
+
+.auth_links a {
+  color: #0b0b0b;
+  padding: 0.5rem;
+  box-shadow: #1e1d1d 1px 1px 1px 1px;
+}
+
+.button_to button,
+.button_to button a {
   cursor: pointer;
+  padding: 5px;
+  font-size: 15px;
+  color: blue;
+  border: none;
 }
 
-.footer {
-  width: 91%;
-  height: 35px;
-  background-color: #c1cad0;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
+.auth_links a:hover {
+  color: #2d06d9;
+  font-weight: bold;
+  box-shadow: #62b3e9 1px 1px 1px 1px;
+}
+
+/* notification and error message */
+.notice {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 3px 2px 3px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  color: green;
+  font-size: large;
 }
 
+#error_explanation {
+  color: red;
+}
+
+#error_explanation h2 {
+  font-size: medium;
+  font-weight: bold;
+}
+
+#error_explanation ul {
+  list-style: square;
+  padding: 0.5rem 1.5rem;
+  font-size: 15px;
+}
+
+/* style the modal */
 .modal {
   position: absolute;
   z-index: 1;
@@ -256,48 +392,44 @@ form {
   align-self: center;
 }
 
-.cancel-button:hover {
-  background-color: #2640fe;
-}
-
-.modal h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-}
-
-form input,
-form textarea {
-  width: 25vw;
-  padding: 0.5rem;
-  border: 1px solid black;
-}
-
-form textarea {
-  height: 10vh;
-}
-
-.form-elements {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
-  margin: 1rem 0;
-}
-
-.comment-textarea {
-  align-self: center;
-  width: 45vw;
-  height: 15vh;
-}
-
-.notice {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+/* style header and foooter */
+.header {
+  width: 91%;
+  height: 75px;
+  background-color: #62b3e9;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
   padding: 1rem;
-  background-color: #f5f5f5;
-  color: green;
-  font-size: large;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 3px 2px 3px 5px #62b3e9;
+  border-radius: 10px;
+}
+
+.header img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.footer {
+  width: 91%;
+  height: 35px;
+  background-color: #c1cad0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 2px 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
