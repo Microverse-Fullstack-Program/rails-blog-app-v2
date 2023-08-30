@@ -1,13 +1,15 @@
-<header>
-  <div class="header">
-    <%=link_to root_path do %>
-      <%= image_tag "home_icon.png", :alt => "Home" %>
-    <% end %>
+<% if user_signed_in? %>
+  <header>
+    <div class="header">
+      <%=link_to root_path do %>
+        <%= image_tag "home_icon.png", :alt => "Home" %>
+      <% end %>
 
-    <h1> Blog App </h1>
+      <h1> Blog App </h1>
 
-    <%= link_to :back do %>
-      <%= image_tag "back_icon.png", :alt => "Back" %>
-    <% end %>
-  </div>
-</header>
+      <%= link_to :back do %>
+        <%= image_tag "back_icon.png", :alt => "Back" %>
+      <% end %>
+    </div>
+  </header>
+<% end %>
