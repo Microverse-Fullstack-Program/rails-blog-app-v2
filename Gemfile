@@ -80,3 +80,5 @@ gem 'rspec-rails', '~> 6.0'
 gem 'rails-controller-testing', '~> 1.0'
 
 gem 'devise', '~> 4.9'
+
+gem 'cancancan', '~> 3.5'

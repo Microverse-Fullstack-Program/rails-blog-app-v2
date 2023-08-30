@@ -6,9 +6,9 @@ Rails.application.routes.draw do
   root "users#index"
 
   resources :users, only: [:index, :show] do
-    resources :posts, only: [:index, :show, :new, :create] do
+    resources :posts, only: [:index, :show, :new, :create, :destroy] do
       resources :comments, only: [:new, :create, :show, :destroy]
-      resources :likes, only: [:new, :create]
+      resources :likes, only: [:new, :create, :show, :destroy]
     end
   end
 end

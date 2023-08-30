@@ -213,6 +213,8 @@ a {
   box-shadow: 1px 2px 1px 3px rgba(58, 2, 2, 0.2);
   border: #10055e 1px solid;
   border-radius: 10px;
+  color: #0b0b0b;
+  cursor: pointer;
 }
 
 /* style the authentification pages */
