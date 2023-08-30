@@ -4,11 +4,13 @@ class Ability
     # Define abilities for the user here. For example:
     can :read, :all
     return unless user.present?
+
     can :manage, User, id: user.id # user can manage only his own profile
     can :manage, Post, author_id: user.id # user can manage only his own posts
     can :manage, Comment, author_id: user.id # user can manage only his own comments
     can :create, Like # user can create likes
     return unless user.role == 'admin'
+
     can :destroy, Post # admin can delete any post
     can :destroy, Comment # admin can delete any comment
     # The first argument to `can` is the action you are giving the user
