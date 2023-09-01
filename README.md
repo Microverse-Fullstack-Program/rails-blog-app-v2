@@ -44,6 +44,10 @@ This project is all about a simple blog application where a user can post anythi
 
 - Active Records Migration
 - Data Model
+- Creating Posts
+- Comment on Posts
+- Like and Dislike Posts
+- Delete Posts and Comments
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -104,11 +108,9 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [] Add Devise.
-- [] Add authorization rules.
-- [] Dislike post
-- [] Add API endpoints.
-- [] API documentation.
+- [] Add API endpoints
+- [] API documentation
+- [] Add responsiveness 
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
