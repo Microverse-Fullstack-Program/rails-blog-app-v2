@@ -108,7 +108,6 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [] Add API endpoints
 - [] API documentation
 - [] Add responsiveness 
   
